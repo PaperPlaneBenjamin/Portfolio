@@ -2,7 +2,7 @@
   <section id="about">
     <h2>A propos</h2>
     <div class="about-content">
-      <Avatar src="/profil.png" alt="Benjamin Coquet" />
+      <Avatar src="/profil.webp" alt="Benjamin Coquet" />
       <p>
         Hello, je suis Benjamin Coquet, j'ai 27 ans. Après un parcours dans
         l'ingénierie mécanique, j'ai pris le chemin en 2024 du développement

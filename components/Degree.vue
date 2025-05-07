@@ -1,6 +1,12 @@
 <template>
   <div class="card">
-    <img v-if="icon" :src="icon" :alt="name" class="picture-degree" />
+    <NuxtImg
+      v-if="icon"
+      :src="icon"
+      :alt="name"
+      class="picture-degree"
+      loading="lazy"
+    />
     <div class="text-degree">
       <p class="certification">{{ certification }}</p>
       <p>{{ mention }}</p>

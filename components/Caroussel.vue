@@ -3,15 +3,17 @@
     <li
       v-for="(project, i) in projects"
       :style="`background-image: url(${project.backgroundUrl});`"
-      role="button"
+      :aria-label="'voir le projet ' + project.label"
       :class="active === i ? 'active' : ''"
       @click="active = i"
     >
-      <img
+      <NuxtImg
         v-if="active !== i"
         :src="project.logo"
-        alt="Tech logo"
+        :alt="project.alt"
         class="tech-logo"
+        format="webp"
+        loading="lazy"
       />
       <Info
         v-if="active == i"

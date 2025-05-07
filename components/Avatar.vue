@@ -1,6 +1,12 @@
 <template>
   <div class="avatar">
-    <img :src="src" :alt="alt" class="avatar-image" />
+    <NuxtImg
+      :src="src"
+      :alt="alt"
+      class="avatar-image"
+      format="webp"
+      loading="lazy"
+    />
   </div>
 </template>
 

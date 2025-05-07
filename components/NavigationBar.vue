@@ -7,6 +7,7 @@
             href="#home"
             :class="{ active: active === 'home' }"
             @click.prevent="setActive('home')"
+            aria-label="Accueil"
           >
             <Home />
           </a>
@@ -16,6 +17,7 @@
             href="#about"
             :class="{ active: active === 'about' }"
             @click.prevent="setActive('about')"
+            aria-label="À propos"
           >
             <User />
           </a>
@@ -25,6 +27,7 @@
             href="#skills"
             :class="{ active: active === 'skills' }"
             @click.prevent="setActive('skills')"
+            aria-label="Compétences"
           >
             <Dumbbell />
           </a>
@@ -34,6 +37,7 @@
             href="#projects"
             :class="{ active: active === 'projects' }"
             @click.prevent="setActive('projects')"
+            aria-label="Projets"
           >
             <GalleryHorizontalEnd />
           </a>
@@ -43,6 +47,7 @@
             href="#contact"
             :class="{ active: active === 'contact' }"
             @click.prevent="setActive('contact')"
+            aria-label="Contact"
           >
             <Mail />
           </a>

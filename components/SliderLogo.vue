@@ -7,7 +7,12 @@
     >
       <div v-for="n in 2" :key="n" class="loop">
         <div v-for="item in items" :key="item.name + n" class="card">
-          <img v-if="item.icon" :src="item.icon" :alt="item.name" />
+          <NuxtImg
+            v-if="item.icon"
+            :src="item.icon"
+            :alt="'Logo de ' + item.name"
+            loading="lazy"
+          />
           <p>{{ item.name }}</p>
         </div>
       </div>

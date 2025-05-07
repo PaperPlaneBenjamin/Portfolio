@@ -5,38 +5,48 @@
     "problem": "Refonte du design de la page Mega League et migration de l'application de Vue 2 à Vue 3",
     "techs": ["Vue.js", "Vuetify"],
     "backgroundUrl": "/caroussel/Présentation-soraremega-2.webp",
-    "logo": "/icons/web/vuejs.svg"
+    "logo": "/icons/web/vuejs.svg",
+    "alt": "technologie pour Soraremega",
+    "label": "Soraremega"
   },
   {
     "name": "Mon vieux grimoire - Projet Formation",
     "description": "Développement de l’API d’un site de notation de livres pour une chaîne de librairies. Mise en place d’un back-end en Node.js avec gestion des utilisateurs, des livres et des notes, selon un cahier des charges précis. Optimisation des images uploadées selon les bonnes pratiques du Green Code. Mise en place d'un système de sécurité avec JWT et Helmet notamment.",
     "problem": "Développer le back-end d'un site de notation de livres",
     "techs": ["Node.js", "MongoDB", "Express", "Postman"],
-    "backgroundUrl": "/caroussel/Accueil.png",
-    "logo": "/icons/web/nodejs.svg"
+    "backgroundUrl": "/caroussel/Accueil.webp",
+    "logo": "/icons/web/nodejs.svg",
+    "alt": "technologie pour Mon vieux grimoire",
+    "label": "Mon vieux grimoire"
   },
   {
     "name": "E4E5 DEVELOPPEMENT - Projet Entreprise",
     "description": "Intégration et développement de la landing page à partir de maquettes Figma. Utilisation de la bibliothèque Vuetify 3 pour les divers composants. Adaptation du site aux tablettes et mobiles.",
     "problem": "Développer la landing page de l'entreprise",
     "techs": ["Vuejs", "Vuetify"],
-    "backgroundUrl": "/caroussel/e4e5.png",
-    "logo": "/icons/web/vuejs.svg"
+    "backgroundUrl": "/caroussel/e4e5.webp",
+    "logo": "/icons/web/vuejs.svg",
+    "alt": "technologie pour E4E5 DEVELOPPEMENT",
+    "label": "E4E5 DEVELOPPEMENT"
   },
   {
     "name": "Heimdall - Projet Entreprise",
     "description": "Refonte du design d'affichage des oeuvres de peintures en style Mansory. Correction du responsive design pour la page identité, création d'une page showroom, refonte du design du switcher de langue.",
     "problem": "Permettre à l'utilisateur de juger de la taille des oeuvres dans les galleries d'artistes.",
     "techs": ["Wordpress"],
-    "backgroundUrl": "/caroussel/Heimdall.png",
-    "logo": "/icons/web/wordpress.svg"
+    "backgroundUrl": "/caroussel/Heimdall.webp",
+    "logo": "/icons/web/wordpress.svg",
+    "alt": "technologie pour Heimdall",
+    "label": "Heimdall"
   },
   {
     "name": "Kasa - Projet Formation",
     "description": "Refonte complète d’un site de location d’appartements en React. Développement d’une interface responsive à partir de maquettes Figma, avec gestion de la navigation via React Router et intégration de composants dynamiques (galerie, menus déroulants). Utilisation de données mockées en JSON en attendant le back-end.",
     "problem": "Créer une application web de location immobilière avec React",
     "techs": ["React", "Sass"],
-    "backgroundUrl": "/caroussel/projetReact.png",
-    "logo": "/icons/web/react.svg"
+    "backgroundUrl": "/caroussel/projetReact.webp",
+    "logo": "/icons/web/react.svg",
+    "alt": "technologie pour Kasa",
+    "label": "Kasa"
   }
 ]

@@ -50,7 +50,7 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 #home {
-  min-height: 600px;
+  height: 100vh;
   background-size: 100% 100%;
   background-position: 0px 0px, 0px 0px;
   background-image: radial-gradient(

@@ -20,10 +20,11 @@
         target="_blank"
         class="github-link"
       >
-        <img
+        <NuxtImg
           src="/icons/workflow/github.svg"
           alt="logo gihtub"
           class="logo-github"
+          loading="lazy"
         />
       </a>
     </div>

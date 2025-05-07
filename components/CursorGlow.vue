@@ -1,11 +1,12 @@
 <template>
-  <div ref="cursor" class="cursor-glow" />
+  <div v-if="isDesktop" ref="cursor" class="cursor-glow" />
 </template>
 
 <script setup>
 import { ref, onMounted, onUnmounted } from "vue";
 
 const cursor = ref(null);
+const isDesktop = ref(false);
 
 const moveCursor = (e) => {
   if (cursor.value) {
@@ -14,12 +15,30 @@ const moveCursor = (e) => {
   }
 };
 
+let mediaQuery;
+
 onMounted(() => {
-  window.addEventListener("mousemove", moveCursor);
+  mediaQuery = window.matchMedia("(min-width: 1024px)");
+
+  const update = () => {
+    isDesktop.value = mediaQuery.matches;
+    if (mediaQuery.matches) {
+      window.addEventListener("mousemove", moveCursor);
+    } else {
+      window.removeEventListener("mousemove", moveCursor);
+    }
+  };
+
+  // Initial check + listener
+  update();
+  mediaQuery.addEventListener("change", update);
 });
 
 onUnmounted(() => {
   window.removeEventListener("mousemove", moveCursor);
+  if (mediaQuery) {
+    mediaQuery.removeEventListener("change", update);
+  }
 });
 </script>
 
