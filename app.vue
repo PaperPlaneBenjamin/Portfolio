@@ -42,4 +42,9 @@ section {
   padding: 0px 15px;
   box-sizing: border-box;
 }
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #001e3e inset !important;
+  -webkit-text-fill-color: #0ac37f !important;
+}
 </style>

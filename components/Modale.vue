@@ -44,7 +44,7 @@ defineProps({
 defineEmits(["close"]);
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -127,8 +127,13 @@ h2 {
     padding: 1rem;
     width: 90%;
     margin: 9%;
-    height: 90%;
+    height: auto;
     overflow-y: auto;
+    .close-icon {
+      display: flex;
+      justify-self: end;
+      position: static;
+    }
   }
   h2 {
     font-size: 20px;
@@ -142,6 +147,8 @@ h2 {
 .github-link {
   width: 24px;
   height: 24px;
+  position: static;
+  justify-self: end;
 }
 .logo-github {
   width: 20px;

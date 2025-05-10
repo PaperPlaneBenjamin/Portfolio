@@ -3,9 +3,9 @@
     <div class="contact-container">
       <h2>Contact</h2>
       <form
-        action="https://formspree.io/f/manonggj"
-        method="POST"
+        ref="formContact"
         class="contact-form"
+        @submit.prevent="submitContact"
       >
         <div class="form-group">
           <label for="name">Nom</label>
@@ -15,6 +15,7 @@
             name="name"
             placeholder="Votre nom"
             required
+            autocomplete="name"
           />
         </div>
         <div class="form-group">
@@ -25,6 +26,7 @@
             name="email"
             placeholder="Votre email"
             required
+            autocomplete="email"
           />
         </div>
         <div class="form-group">
@@ -34,13 +36,55 @@
             name="message"
             placeholder="Votre message"
             required
+            autocomplete="off"
           ></textarea>
         </div>
-        <button type="submit">Envoyer</button>
+        <button type="submit" :disabled="isSending">
+          {{ isSending ? "Envoi..." : "Envoyer" }}
+        </button>
+        <p v-if="isSuccess" class="success-message">
+          Votre message a bien été envoyé.
+        </p>
       </form>
     </div>
   </section>
 </template>
+
+<script setup>
+const formContact = ref(null);
+const isSending = ref(false);
+const isSuccess = ref(false);
+
+const submitContact = async () => {
+  if (!formContact.value) return;
+
+  isSending.value = true;
+  isSuccess.value = false;
+
+  const formData = new FormData(formContact.value);
+
+  try {
+    const response = await fetch("https://formspree.io/f/manonggj", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+      },
+      body: formData,
+    });
+
+    if (response.ok) {
+      isSuccess.value = true;
+      formContact.value.reset();
+    } else {
+      alert("Erreur lors de l'envoi.");
+    }
+  } catch (err) {
+    alert("Problème de connexion.");
+  } finally {
+    isSending.value = false;
+  }
+};
+</script>
 
 <style lang="scss" scoped>
 #contact {
@@ -127,6 +171,13 @@
           background-color: #0ac37f;
           color: #001e3e;
         }
+      }
+      .success-message {
+        color: #0ac37f;
+        margin-top: 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
       }
     }
   }

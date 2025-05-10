@@ -3,7 +3,7 @@
     <h2>A propos</h2>
     <div class="about-content">
       <Avatar src="/profil.webp" alt="Benjamin Coquet" />
-      <p>
+      <p class="about-text-1">
         Hello, je suis Benjamin Coquet, j'ai 27 ans. Après un parcours dans
         l'ingénierie mécanique, j'ai pris le chemin en 2024 du développement
         web. Un an plus tard j'obtiens un bac+2 en alternance dans une
@@ -13,7 +13,7 @@
         travailler sur des projets variés, allant de la création de sites
         vitrines à des applications web plus
       </p>
-      <p>
+      <p class="about-text-2">
         complexes tel que Sorraremega. Je suis un développeur web passionné par
         la création d'applications performantes et esthétiques. Rigoureux,
         j'aime particulièrement le responsive design. Autonome, j'aime résoudre
@@ -90,6 +90,12 @@ import Degree from "./Degree.vue";
       p {
         width: 100%;
         text-align: center;
+      }
+      .about-text-1 {
+        margin-bottom: 0;
+      }
+      .about-text-2 {
+        margin-top: 0;
       }
     }
     .about-degrees {

@@ -1,4 +1,5 @@
 export default defineNuxtConfig({
+  ssr: true,
   modules: ["@nuxt/image"],
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
@@ -17,6 +18,13 @@ export default defineNuxtConfig({
         { property: "og:description", content: "Développeur web junior" },
         { property: "og:image", content: "/images/preview.jpg" },
         { property: "og:locale", content: "fr_FR" },
+      ],
+      link: [
+        {
+          rel: "icon",
+          type: "image/x-icon",
+          href: "/rocket.ico",
+        },
       ],
     },
   },

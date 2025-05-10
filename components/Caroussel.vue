@@ -15,7 +15,7 @@
         format="webp"
         loading="lazy"
       />
-      <Info
+      <CirclePlus
         v-if="active == i"
         size="35"
         color="#0ac37f"
@@ -36,7 +36,7 @@
 </template>
 
 <script setup>
-import { Info } from "lucide-vue-next";
+import { CirclePlus } from "lucide-vue-next";
 import Modale from "./Modale.vue";
 import portfolio from "../data/portfolio.json";
 
