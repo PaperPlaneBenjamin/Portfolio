@@ -71,4 +71,10 @@ defineProps({
     align-items: center;
   }
 }
+
+@media (max-width: 768px) {
+  .card {
+    margin-right: 0;
+  }
+}
 </style>

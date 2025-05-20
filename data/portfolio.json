@@ -1,23 +1,26 @@
 [
   {
     "name": "Soraremega - Projet Entreprise",
-    "description": "J'ai rejoint ce projet en tant que développeur front end, j'ai réalisé un nettoyage de code, une refonte du design de la page principale du jeu. J'ai par la suite été en charge de la migration de l'application web de Vue 2 à Vue 3 et aussi de Vuetify 2 à 3. J'ai également géré le passage du store de Vuex à Pinia. J'ai aussi intégré la nouvelle offre de Sorraremega, à savoir Master Liga. ",
+    "description": "J'ai rejoint ce projet en tant que développeur front end, j'ai réalisé un nettoyage de code, une refonte du design de la page principale du jeu. J'ai par la suite été en charge de la migration de l'application web de Vue 2 à Vue 3 et aussi de Vuetify 2 à 3. J'ai également géré le passage du store de Vuex à Pinia.",
     "problem": "Refonte du design de la page Mega League et migration de l'application de Vue 2 à Vue 3",
     "techs": ["Vue.js", "Vuetify"],
     "backgroundUrl": "/caroussel/Présentation-soraremega-2.webp",
     "logo": "/icons/web/vuejs.svg",
     "alt": "technologie pour Soraremega",
-    "label": "Soraremega"
+    "label": "Soraremega",
+    "isFormation": false,
+    "link": "https://www.soraremega.com/"
   },
   {
     "name": "Mon vieux grimoire - Projet Formation",
-    "description": "Développement de l’API d’un site de notation de livres pour une chaîne de librairies. Mise en place d’un back-end en Node.js avec gestion des utilisateurs, des livres et des notes, selon un cahier des charges précis. Optimisation des images uploadées selon les bonnes pratiques du Green Code. Mise en place d'un système de sécurité avec JWT et Helmet notamment.",
+    "description": "Développement de l’API d’un site de notation de livres pour une chaîne de librairies. Mise en place d’un back-end en Node.js avec gestion des utilisateurs, des livres et des notes, selon un cahier des charges précis. Optimisation des images uploadées. Mise en place d'un système de sécurité avec JWT et Helmet notamment.",
     "problem": "Développer le back-end d'un site de notation de livres",
     "techs": ["Node.js", "MongoDB", "Express", "Postman"],
     "backgroundUrl": "/caroussel/Accueil.webp",
     "logo": "/icons/web/nodejs.svg",
     "alt": "technologie pour Mon vieux grimoire",
-    "label": "Mon vieux grimoire"
+    "label": "Mon vieux grimoire",
+    "isFormation": true
   },
   {
     "name": "E4E5 DEVELOPPEMENT - Projet Entreprise",
@@ -27,7 +30,9 @@
     "backgroundUrl": "/caroussel/e4e5.webp",
     "logo": "/icons/web/vuejs.svg",
     "alt": "technologie pour E4E5 DEVELOPPEMENT",
-    "label": "E4E5 DEVELOPPEMENT"
+    "label": "E4E5 DEVELOPPEMENT",
+    "isFormation": false,
+    "link": "https://e4e5.dev/"
   },
   {
     "name": "Heimdall - Projet Entreprise",
@@ -37,7 +42,9 @@
     "backgroundUrl": "/caroussel/Heimdall.webp",
     "logo": "/icons/web/wordpress.svg",
     "alt": "technologie pour Heimdall",
-    "label": "Heimdall"
+    "label": "Heimdall",
+    "isFormation": false,
+    "link": "https://heimdall-gallery.com/"
   },
   {
     "name": "Kasa - Projet Formation",
@@ -47,6 +54,7 @@
     "backgroundUrl": "/caroussel/projetReact.webp",
     "logo": "/icons/web/react.svg",
     "alt": "technologie pour Kasa",
-    "label": "Kasa"
+    "label": "Kasa",
+    "isFormation": true
   }
 ]

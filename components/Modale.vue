@@ -16,9 +16,10 @@
         <strong>Compétences développées : </strong> {{ techs.join(" - ") }}
       </p>
       <a
+        v-if="isFormation"
         href="https://github.com/PaperPlaneBenjamin"
         target="_blank"
-        class="github-link"
+        class="link"
       >
         <NuxtImg
           src="/icons/workflow/github.svg"
@@ -27,18 +28,23 @@
           loading="lazy"
         />
       </a>
+      <a v-else :href="link" target="_blank" class="link">
+        <Link color="#001e3e" alt="logo du lien" class="logo-github" />
+      </a>
     </div>
   </div>
 </template>
 
 <script setup>
-import { CircleX } from "lucide-vue-next";
+import { CircleX, Link } from "lucide-vue-next";
 
 defineProps({
   title: String,
   description: String,
   problem: String,
   techs: Array,
+  isFormation: Boolean,
+  link: String,
 });
 
 defineEmits(["close"]);
@@ -99,7 +105,7 @@ h2 {
   height: 24px;
 }
 
-.github-link {
+.link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -144,7 +150,7 @@ h2 {
     font-size: 14px;
   }
 }
-.github-link {
+.link {
   width: 24px;
   height: 24px;
   position: static;
@@ -153,5 +159,23 @@ h2 {
 .logo-github {
   width: 20px;
   height: 20px;
+}
+
+@media (max-width: 375px) {
+  .modal-content {
+    padding: 0.5rem;
+    width: 90%;
+    margin: 5%;
+    height: auto;
+    overflow-y: auto;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .description,
+  .problem,
+  .tech {
+    font-size: 12px;
+  }
 }
 </style>

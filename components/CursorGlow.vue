@@ -28,8 +28,6 @@ onMounted(() => {
       window.removeEventListener("mousemove", moveCursor);
     }
   };
-
-  // Initial check + listener
   update();
   mediaQuery.addEventListener("change", update);
 });

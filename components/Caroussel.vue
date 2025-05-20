@@ -31,6 +31,8 @@
     :description="projects[active].description"
     :problem="projects[active].problem"
     :techs="projects[active].techs"
+    :is-formation="projects[active].isFormation"
+    :link="projects[active].link"
     @close="modalOpen = false"
   />
 </template>

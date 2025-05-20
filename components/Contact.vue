@@ -58,6 +58,14 @@ const isSuccess = ref(false);
 const submitContact = async () => {
   if (!formContact.value) return;
 
+  const message = formContact.value.message.value.trim();
+  if (message.length < 15 || message.length > 500) {
+    alert(
+      "Votre message doit contenir entre 15 et 600 caractères. Le votre fait " +
+        message.length
+    );
+    return;
+  }
   isSending.value = true;
   isSuccess.value = false;
 

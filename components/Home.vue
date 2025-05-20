@@ -69,6 +69,7 @@ onMounted(() => {
     font-size: 90px;
     font-weight: bold;
     color: #0ac37f;
+    min-height: 3em;
   }
 
   .line {
@@ -77,6 +78,7 @@ onMounted(() => {
     white-space: nowrap;
     overflow: hidden;
     min-height: 1em;
+    line-height: 1.2em;
   }
 
   .cursor {
